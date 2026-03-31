@@ -1,0 +1,162 @@
+{
+  "info": {
+    "_postman_id": "1b8b8018-41a7-4fed-aef3-589cfb56ed30",
+    "name": "GitHub API Portfolio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32061580",
+    "_collection_link": "https://go.postman.co/collection/32061580-1b8b8018-41a7-4fed-aef3-589cfb56ed30?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get User Profile",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Проверяем, что сервер ответил успешно",
+              "pm.test(\"Статус-код 200 OK\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Проверяем, что ответ пришел в формате JSON",
+              "pm.test(\"Формат ответа — JSON\", function () {",
+              "    pm.response.to.be.json;",
+              "});",
+              "",
+              "// Проверяем, что в ответе верный логин",
+              "pm.test(\"Логин соответствует ожидаемому\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.login).to.eql(\"ttolmacheva-qa\");",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/users/ttolmacheva-qa",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "users",
+            "ttolmacheva-qa"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get User Repositories",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// 1. Проверяем статус-код",
+              "pm.test(\"Статус-код 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// 2. Проверяем, что пришел именно список (массив)",
+              "pm.test(\"Ответ является массивом\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.be.an(\"array\");",
+              "});",
+              "",
+              "// 3. Проверяем, что в списке есть мой фреймворк",
+              "pm.test(\"Репозиторий с автотестами присутствует в списке\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    // Ищем в массиве объект с нужным именем",
+              "    var repo = jsonData.find(r => r.name === \"github-automation-framework\");",
+              "    pm.expect(repo).to.not.be.undefined;",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/users/ttolmacheva-qa/repos",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "users",
+            "ttolmacheva-qa",
+            "repos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Framework Repo Details",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Статус-код 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Проверяем важные свойства репозитория",
+              "pm.test(\"Проверка настроек репозитория\", function () {",
+              "    var jsonData = pm.response.json();",
+              "",
+              "    // Проверяем, что репозиторий публичный",
+              "    pm.expect(jsonData.private).to.be.false;",
+              "",
+              "    // Проверяем основную ветку (должна быть main)",
+              "    pm.expect(jsonData.default_branch).to.eql(\"main\");",
+              "",
+              "    // Проверяем, что язык проекта определен как Python",
+              "    pm.expect(jsonData.language).to.eql(\"Python\");",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/repos/ttolmacheva-qa/github-automation-framework",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "ttolmacheva-qa",
+            "github-automation-framework"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
