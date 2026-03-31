@@ -49,7 +49,7 @@ def test_successful_login(browser):
   <img src="https://github.com/user-attachments/assets/ae5c1d6d-3a96-4db6-aef9-a6fcbb611aa2" width="45%" />
 </p>
 
-> [📂 Скачать коллекцию запросов для Postman (.json)](ССЫЛКА_НА_ФАЙЛ_В_РЕПОЗИТОРИИ)
+> [📂 Скачать коллекцию запросов для Postman (.json)](https://github.com/ttolmacheva-qa/QA-Portfolio/blob/main/GitHub%20API%20Portfolio.postman_collection.json)
 
 ---
 
