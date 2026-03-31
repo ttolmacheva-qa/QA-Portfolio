@@ -4,7 +4,7 @@
 
 Активно развиваюсь в тестировании API, баз данных и автоматизации (UI + API).
 
-📫 **Связь со мной:** [Telegram](https://t.me/tattolmacheva) | [Резюме на hh.ru](hh.ru/resume/252903ddff0d5eb2000039ed1f693776594c76) | **Email:** tan178@yandex.ru
+📫 **Связь со мной:** [Telegram](https://t.me/tattolmacheva) | [Резюме на hh.ru](https://hh.ru/resume/252903ddff0d5eb2000039ed1f693776594c76) | **Email:** tan178@yandex.ru
 
 ---
 
