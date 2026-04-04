@@ -45,13 +45,17 @@
 * **Код проекта:** [Посмотреть репозиторий](https://github.com/ttolmacheva-qa/github-automation-framework)
 
 ```python
-# Пример моего автотеста (сценарий логина)
-def test_successful_login(browser):
-    login_page = LoginPage(browser)
-    login_page.open()
-    login_page.enter_credentials("test_user", "password123")
-    login_page.click_login_button()
-    assert login_page.is_user_logged_in(), "Пользователь не авторизован"
+@pytest.fixture
+def repo_via_api(api_client):
+    """Создаём репозиторий через API, проверяем через UI, чистим после."""
+    repo = api_client.create_repo(name=f"test-{uuid4().hex[:8]}")
+    yield repo
+    api_client.delete_repo(repo.name)
+
+def test_new_repo_visible_in_profile(browser, repo_via_api):
+    profile = ProfilePage(browser).open()
+    assert profile.has_repo(repo_via_api.name), \
+        f"Репозиторий {repo_via_api.name} не отображается в профиле"
 ```
 
 ---
