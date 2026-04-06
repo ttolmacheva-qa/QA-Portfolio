@@ -1,55 +1,57 @@
-# 👩‍💻 Татьяна Толмачева | QA Engineer
+# QA Portfolio — Татьяна Толмачева
 
-**Middle QA Engineer** с глубоким пониманием e-commerce, логистики и сквозных бизнес-процессов (Яндекс Маркет). Умею структурировать хаос, находить узкие места в интеграциях и писать понятную документацию. 
+Middle QA Engineer • Яндекс Маркет (Логистика, OMS, E2E)  
+[Telegram](https://t.me/tattolmacheva) • [hh.ru](https://hh.ru/resume/252903ddff0d5eb2000039ed1f693776594c76) • tan178@yandex.ru
 
-Активно развиваюсь в тестировании API, баз данных и автоматизации (UI + API).
+---
 
-📫 **Связь со мной:** [Telegram](https://t.me/tattolmacheva) | [Резюме на hh.ru](https://hh.ru/resume/252903ddff0d5eb2000039ed1f693776594c76) | **Email:** tan178@yandex.ru
+## 📂 Навигация по портфолио
+
+|Проект|Что внутри|Стек|
+|:--|:--|:--|
+|[Автоматизация UI + API](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-ui--api)|Фреймворк автотестов, Page Object, фикстуры|Python, Pytest, Playwright|
+|[Тестирование API](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-api-postman)|Коллекция запросов, скрипты валидации|Postman, REST API, JSON|
+|[SQL-запросы](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-sql)|Запросы для верификации логистических данных|PostgreSQL|
+|[Тестовая документация](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F)|Баг-репорт|Yandex TMS|
+|[Продуктовый кейс: Яндекс Маркет](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%B5%D0%B9%D1%81-%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82--%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0)|Регрессионная модель с нуля, метрики|Manual Testing, E2E|
 
 ---
 
 ## 🛠 Технический стек
-* **База:** Функциональное, E2E, Регрессионное и Исследовательское тестирование. Техники тест-дизайна.
-* **Web:** Chrome DevTools, HTML/CSS.
-* **API:** Postman (Collections, Environments, Scripts), REST API, JSON.
-* **Базы данных:** SQL (PostgreSQL/MySQL) — `JOIN`, `GROUP BY`, фильтрация.
-* **Автоматизация:** Python 3, Pytest + Playwright.
-* **Инструменты:** Jira, Confluence, Yandex Tracker/Wiki, TMS.
+
+**Тестирование:** Функциональное, E2E, Регрессионное, Исследовательское, техники тест-дизайна  
+**API:** Postman (Collections, Environments, Scripts), REST API, JSON  
+**Автоматизация:** Python 3, Pytest, Playwright  
+**Базы данных:** SQL — PostgreSQL/MySQL (`JOIN`, подзапросы, оконные функции)  
+**Web:** Chrome DevTools, HTML/CSS  
+**Инструменты:** Jira, Confluence, Yandex Tracker/Wiki, TMS, Git
 
 ---
 
-## 📦 Продуктовый опыт: Яндекс Маркет — Логистика
+## 🚀 Автоматизация тестирования (UI + API)
 
-Тестировала ключевые логистические процессы на одном из крупнейших e-commerce-сервисов России.
+Фреймворк для автоматизированного тестирования на Python. Тестовый полигон — GitHub.
 
-### Зона ответственности
+**Стек:** Python, Pytest, Playwright  
+**Код проекта:** [github-automation-framework](https://github.com/ttolmacheva-qa/github-automation-framework)
 
-Сквозное тестирование логистического модуля: переходы статусов заказа, управление партнёрами (создание, настройка связей и условий взаимодействия), интеграции со службами доставки, расчёт сроков и слотов, трекинг, возвраты и отмены.
+**Структура проекта:**
 
-### Ключевой результат
+```
+├── pages/               # Page Object
+│   ├── base_page.py
+│   ├── login_page.py
+│   └── profile_page.py
+├── api/
+│   └── github_client.py # API-клиент
+├── tests/
+│   ├── test_repo_crud.py
+│   └── test_profile.py
+├── conftest.py          # Фикстуры
+└── pytest.ini
+```
 
-**Написала регрессионный набор из 590 тест-кейсов с нуля** для внутреннего логистического сервиса. До этого покрытие регрессом отсутствовало — тестирование проводилось ad hoc.
-
-|Метрика|До|После|
-|:--|:--|:--|
-|Покрытие критичных путей регрессом|0% (ad hoc)|~85% основных сценариев|
-|Время проведения полного регресса|Не регламентировано|~3 рабочих дня (1 QA)|
-|Defect escape rate (критичные баги в проде)|~3–4 за квартал|≤1 за квартал|
-|Онбординг нового QA на регресс|~2 недели с наставником|~3 дня по документации|
-
-### Чем это ценно
-
-- Регресс стал воспроизводимым — любой QA в команде мог провести его без потери покрытия.
-- Снизился риск пропуска дефектов при частых релизах в критичном для бизнеса сервисе.
-- Появилась прозрачная картина того, что именно проверяется перед каждым релизом.
-
----
-
-## 🚀 Автоматизация тестирования (UI + API Framework)
-Разрабатываю фреймворк для автоматизированного тестирования (UI + API). В качестве тестового полигона использую сам GitHub.
-* **Стек:** Python, Pytest, Playwright.
-* **Что покрыто:** авторизация, создание репозитория через UI, проверка API-ответов.
-* **Код проекта:** [Посмотреть репозиторий](https://github.com/ttolmacheva-qa/github-automation-framework)
+**Пример: создание репозитория через API + проверка в UI**
 
 ```python
 @pytest.fixture
@@ -68,58 +70,121 @@ def test_new_repo_visible_in_profile(browser, repo_via_api):
 ---
 
 ## 🔌 Тестирование API (Postman)
-Я разработала комплексную коллекцию запросов для GitHub API, включающую автоматические проверки на JavaScript. Это позволяет верифицировать интеграционные сценарии на уровне данных.
 
-**Ключевые навыки:**
-- Работа с методами GET/POST.
-- Написание тестов для валидации статус-кодов и схем JSON.
-- Использование JS-методов для поиска и фильтрации данных в массивах ответов.
+Коллекция запросов для GitHub API с автоматическими проверками на JavaScript.
+
+**Что покрыто:**
+
+- CRUD-операции: GET, POST, PUT/PATCH, DELETE
+- Валидация статус-кодов и JSON-схем
+- Chaining запросов (результат одного → вход следующего)
+- Переменные окружения (Environment)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/88cbaa5c-1139-4473-b58f-54ce40ddc444" width="45%" />
   <img src="https://github.com/user-attachments/assets/ae5c1d6d-3a96-4db6-aef9-a6fcbb611aa2" width="45%" />
 </p>
 
-> [📂 Скачать коллекцию запросов для Postman (.json)](https://github.com/ttolmacheva-qa/QA-Portfolio/blob/main/GitHub%20API%20Portfolio.postman_collection.json)
+> [📂 Скачать коллекцию (.json)](https://github.com/ttolmacheva-qa/QA-Portfolio/blob/main/GitHub%20API%20Portfolio.postman_collection.json)
 
 ---
 
 ## 🗄 Работа с Базами Данных (SQL)
-Уверенно пишу SQL-запросы для верификации тестовых данных. Понимаю структуру реляционных БД. 
 
-**Пример моего запроса:** *Найти всех клиентов, у которых есть отмененные заказы на сумму более 5000 руб за последний месяц.*
+SQL-запросы для верификации данных в логистическом контексте. PostgreSQL.
+
+**Пример 1.** Клиенты с отменёнными заказами на сумму > 5000 ₽ за последний месяц:
 
 ```sql
-SELECT 
-    c.first_name, 
-    c.last_name, 
-    o.order_id, 
-    o.total_amount
+SELECT c.first_name, c.last_name, o.order_id, o.total_amount
 FROM customers c
 JOIN orders o ON c.customer_id = o.customer_id
-WHERE o.status = 'CANCELLED' 
+WHERE o.status = 'CANCELLED'
   AND o.total_amount > 5000
   AND o.created_at >= CURRENT_DATE - INTERVAL '1 month'
 ORDER BY o.total_amount DESC;
 ```
 
+**Пример 2.** Среднее время доставки по регионам с выявлением аномалий:
+
+```sql
+SELECT
+    r.region_name,
+    COUNT(o.order_id) AS total_orders,
+    ROUND(AVG(EXTRACT(EPOCH FROM (o.delivered_at - o.shipped_at)) / 3600), 1) AS avg_delivery_hours,
+    ROUND(MAX(EXTRACT(EPOCH FROM (o.delivered_at - o.shipped_at)) / 3600), 1) AS max_delivery_hours
+FROM orders o
+JOIN regions r ON o.region_id = r.region_id
+WHERE o.status = 'DELIVERED'
+  AND o.delivered_at IS NOT NULL
+GROUP BY r.region_name
+HAVING AVG(EXTRACT(EPOCH FROM (o.delivered_at - o.shipped_at)) / 3600) > 48
+ORDER BY avg_delivery_hours DESC;
+```
+
+**Пример 3.** Ранжирование курьеров по количеству доставок (оконная функция):
+
+```sql
+SELECT
+    courier_id,
+    courier_name,
+    deliveries_count,
+    RANK() OVER (ORDER BY deliveries_count DESC) AS rank
+FROM (
+    SELECT
+        c.courier_id,
+        c.name AS courier_name,
+        COUNT(d.delivery_id) AS deliveries_count
+    FROM couriers c
+    JOIN deliveries d ON c.courier_id = d.courier_id
+    WHERE d.status = 'COMPLETED'
+      AND d.completed_at >= CURRENT_DATE - INTERVAL '1 month'
+    GROUP BY c.courier_id, c.name
+) sub;
+```
+
 ---
 
 ## 📝 Тестовая документация
-Ниже представлены примеры моих артефактов тестирования для модуля "Корзина интернет-магазина".
 
-### 🐛 Пример Баг-репорта
-| Поле | Описание |
-| :--- | :--- |
-| **Summary** | [Корзина] Ошибка 500 при применении промокода с истекшим сроком действия |
-| **Окружение** | Прод, Google Chrome 120.0, Windows 11 |
-| **Шаги** | 1. Добавить товар в корзину.<br>2. Ввести промокод `EXPIRED24`.<br>3. Нажать "Применить". |
-| **Фактический результат** | UI зависает, в DevTools (Network) падает ошибка `500 Internal Server Error`. |
-| **Ожидаемый результат** | Появляется валидационное сообщение "Срок действия промокода истек". Статус-код ответа `400 Bad Request`. |
+### 🐛 Баг-репорт
 
-### 🧠 Mind-Map (Анализ требований)
-Схема проверок логистического модуля (переходы статусов заказа).
-![Анализ требований логистики](images/Снимок%20экрана%202026-04-02%20в%2010.44.46.png)
+|Поле|Описание|
+|:--|:--|
+|**Summary**|[Корзина] Ошибка 500 при применении промокода с истекшим сроком действия|
+|**Severity**|Critical|
+|**Окружение**|Прод, Google Chrome 120.0, Windows 11|
+|**Предусловие**|В корзине есть хотя бы 1 товар|
+|**Шаги**|1. Открыть корзину. 2. Ввести промокод `EXPIRED24`. 3. Нажать «Применить».|
+|**Фактический результат**|UI зависает на ~5 сек. В DevTools → Network: `POST /api/cart/promo` возвращает `500 Internal Server Error`. Тело ответа: `{"error": "NullPointerException"}`.|
+|**Ожидаемый результат**|Сообщение «Срок действия промокода истёк». Статус `400 Bad Request`.|
+|**Приложение**|Скриншот Network-вкладки, curl-запрос для воспроизведения|
 
 ---
-*Спасибо за внимание! Открыта к предложениям и тестовым заданиям.*
+
+## 📦 Продуктовый кейс: Яндекс Маркет — Логистика
+
+Тестировала ключевые логистические процессы на одном из крупнейших e-commerce-сервисов России.
+
+**Зона ответственности:** сквозное тестирование логистического модуля — переходы статусов заказа, управление партнёрами, интеграции со службами доставки, расчёт сроков и слотов, трекинг, возвраты и отмены.
+
+### Ключевой результат
+
+Написала регрессионный набор из 590 тест-кейсов с нуля для внутреннего логистического сервиса. До этого регресс не был формализован — тестирование проводилось ad hoc.
+
+|Метрика|До|После|
+|:--|:--|:--|
+|Покрытие критичных путей регрессом|Не формализовано|~85% основных сценариев|
+|Время полного регресса|Не регламентировано|~3 рабочих дня (1 QA)|
+|Критичные баги в проде (за квартал)|3–4|≤ 1|
+|Онбординг нового QA на регресс|~2 недели с наставником|~3 дня по документации|
+
+### Чем это ценно
+
+- Регресс стал воспроизводимым — любой QA мог провести его без потери покрытия.
+- Снизился риск пропуска дефектов при частых релизах в критичном для бизнеса сервисе.
+- Появилась прозрачная картина того, что именно проверяется перед каждым релизом.
+
+---
+
+_Открыта к предложениям и тестовым заданиям._
