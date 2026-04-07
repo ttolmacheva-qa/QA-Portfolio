@@ -5,18 +5,6 @@ Middle QA Engineer • Яндекс Маркет (Логистика, OMS, E2E)
 
 ---
 
-## 📂 Навигация по портфолио
-
-|Проект|Что внутри|Стек|
-|:--|:--|:--|
-|[Автоматизация UI + API](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-ui--api)|Фреймворк автотестов, Page Object, фикстуры|Python, Pytest, Playwright|
-|[Тестирование API](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-api-postman)|Коллекция запросов, скрипты валидации|Postman, REST API, JSON|
-|[SQL-запросы](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-sql)|Запросы для верификации логистических данных|PostgreSQL|
-|[Тестовая документация](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F)|Баг-репорт|Yandex TMS|
-|[Продуктовый кейс: Яндекс Маркет](https://claude.ai/chat/407c554c-ed7b-4823-8ac2-7b5235a82d6c#-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%B5%D0%B9%D1%81-%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82--%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0)|Регрессионная модель с нуля, метрики|Manual Testing, E2E|
-
----
-
 ## 🛠 Технический стек
 
 **Тестирование:** Функциональное, E2E, Регрессионное, Исследовательское, техники тест-дизайна  
