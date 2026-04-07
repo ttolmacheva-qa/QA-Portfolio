@@ -26,17 +26,20 @@ Middle QA Engineer • Яндекс Маркет (Логистика, OMS, E2E)
 **Структура проекта:**
 
 ```
-├── pages/               # Page Object
-│   ├── base_page.py
-│   ├── login_page.py
-│   └── profile_page.py
 ├── api/
-│   └── github_client.py # API-клиент
+│   └── github_client.py    # API-клиент (обёртка над requests)
+├── pages/
+│   ├── base_page.py         # Базовый Page Object
+│   ├── login_page.py        # Авторизация
+│   ├── profile_page.py      # Профиль пользователя
+│   └── repo_page.py         # Страница репозитория
 ├── tests/
-│   ├── test_repo_crud.py
-│   └── test_profile.py
-├── conftest.py          # Фикстуры
-└── pytest.ini
+│   ├── conftest.py          # Фикстуры (setup/teardown)
+│   ├── test_repo_crud.py    # E2E: создание/удаление репо
+│   └── test_profile.py      # UI: проверки профиля
+├── .github/workflows/       # CI/CD (GitHub Actions)
+├── pytest.ini
+└── requirements.txt
 ```
 
 **Пример: создание репозитория через API + проверка в UI**
